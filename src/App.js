@@ -20,6 +20,7 @@ function App() {
     }
   };
 
+    const name = country[0].name;
   return (
     <div className="App">
       <div className="search_box">
@@ -32,7 +33,7 @@ function App() {
           onKeyPress={search}
         />
           </div>
-          <p>{country[0].topLevelDomain}</p>
+          <p>{country[0].name}</p>
     </div>
   );
 }
