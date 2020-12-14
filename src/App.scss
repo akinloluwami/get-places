@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.search_cont {
+  height: 25vh;
+  width: 100%;
+  background-color: #4895ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search_input {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    animation: search 1.5s linear infinite;
+    transition: all ease-in 0.5s;
+
+    &:focus {
+      width: 200px;
+      background-color: #4895ef;
+      color: #fff;
+      transition: all ease-in 0.5s;
+      animation: none;
+    }
+    &::-ms-value {
+      color: #fff;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes search {
+  0% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 0 40px rgba(255, 255, 255, 0.2), 0 0 0 60px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2),
+      0 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 40px rgba(255, 255, 255, 0.2);
+  }
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  img {
+    width: 30px;
+    padding: 10px;
+  }
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+  margin: 10px;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    transform: translateY(-10%);
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 25px;
+}
+.col1 {
+  .icon {
+    color: #9648ef;
+  }
+  .data b {
+    color: #9648ef;
+  }
+}
+
+.col2 {
+  .icon {
+    color: #fb8500;
+  }
+  .data b {
+    color: #fb8500;
+  }
+}
+.col3 {
+  .icon {
+    color: #2b9348;
+  }
+  .data b {
+    color: #2b9348;
+  }
+}
+.col4 {
+  .icon {
+    color: #ff686b;
+  }
+  .data b {
+    color: #ff686b;
+  }
+}
+.col5 {
+  .icon {
+    color: #4d194d;
+  }
+  .data b {
+    color: #4d194d;
+  }
+}
+.col6 {
+  .icon {
+    color: #00b4d8;
+  }
+  .data b {
+    color: #00b4d8;
+  }
+}
+.col7 {
+  .icon {
+    color: #e09f3e;
+  }
+  .data b {
+    color: #e09f3e;
+  }
+}
+.col8 {
+  .icon {
+    color: #ef233c;
+  }
+  .data b {
+    color: #ef233c;
+  }
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

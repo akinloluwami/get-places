@@ -65,7 +65,7 @@ function App() {
                 <p>{country[0].callingCodes[0]}</p>
               </div>
             </div>
-            <div className="col2 col">
+            <div className="col3 col">
               <div className="icon">
                 <FaMoneyBillWave />
               </div>
@@ -76,6 +76,51 @@ function App() {
                   {country[0].currencies[0].name}
                   {` (${country[0].currencies[0].code})`}
                 </p>
+              </div>
+            </div>
+            <div className="col4 col">
+              <div className="icon">
+                <FaMoneyBillWave />
+              </div>
+              <div className="data">
+                <b>Language</b>
+                <p>{country[0].languages[0].name}</p>
+              </div>
+            </div>
+            <div className="col5 col">
+              <div className="icon">
+                <FaMoneyBillWave />
+              </div>
+              <div className="data">
+                <b>Region</b>
+                <p>{`${country[0].region} | ${country[0].subregion}`}</p>
+              </div>
+            </div>
+            <div className="col6 col">
+              <div className="icon">
+                <FaMoneyBillWave />
+              </div>
+              <div className="data">
+                <b>Population</b>
+                <p>{country[0].population}</p>
+              </div>
+            </div>
+            <div className="col7 col">
+              <div className="icon">
+                <FaMoneyBillWave />
+              </div>
+              <div className="data">
+                <b>Top Level Domain</b>
+                <p>{country[0].topLevelDomain[0]}</p>
+              </div>
+            </div>
+            <div className="col8 col">
+              <div className="icon">
+                <FaMoneyBillWave />
+              </div>
+              <div className="data">
+                <b>Demonym</b>
+                <p>{country[0].demonym}</p>
               </div>
             </div>
           </div>
